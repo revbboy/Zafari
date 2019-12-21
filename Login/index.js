@@ -10,7 +10,7 @@ function ingresar(){
     const pass      = input2.value;
 
     console.log('Usuario: ' + usuario + ', Contraseña: '+ pass);
-    if (usuario === 'revbboy@gmail.com' && pass === 'AntonellA21') {
+    if (usuario === 'ejemplo@gmail.com' && pass === '123456') {
         console.log('PUEDES INGRESAR AL SISTEMA')
     }
     else{
