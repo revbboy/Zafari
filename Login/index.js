@@ -11,10 +11,10 @@ function ingresar(){
 
     console.log('Usuario: ' + usuario + ', Contraseña: '+ pass);
     if (usuario === 'ejemplo@gmail.com' && pass === '123456') {
-        console.log('PUEDES INGRESAR AL SISTEMA')
+        console.log('Iniciando Sesión...')
     }
     else{
-        console.log('NO PUEDE INGRESAR AL SISTEMA')
+        console.log('Email y/o contraseña incorrectos')
     }
     input1.value = '';
     input1.focus();
