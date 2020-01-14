@@ -1,0 +1,93 @@
+body {
+    margin: 0 auto;
+    width: 1440px;
+    height: 1024px;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: grid;
+    grid-template-columns: 0 2;
+    text-align: center;
+}
+
+.caja_principal {
+    width: 1440px;
+    height: 1024px;
+    box-sizing: border-box;
+}
+
+.titPrin {
+    padding-top: 25px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 56px;
+    color: #FFFFFF;
+
+}
+
+header {
+    width: 1447px;
+    height: 115px;
+    background: #333333;
+    box-sizing: border-box;
+
+}
+
+.cont_sec {
+    width: 433px;
+    height: 909px;
+    background: #C3F1FF;
+    box-sizing: border-box;
+    float: left;
+    text-align: left;
+}
+
+.layout {
+    text-align: center;
+    width: 1013px;
+    height: 909px;
+    background: #FFFFFF;
+    box-sizing: border-box;
+    margin-left: 433px;
+}
+
+.IF {
+    width: 1013px;
+    height: 700px;
+}
+
+H1 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    color: #000000;
+}
+
+.tit {
+    width: 433px;
+    height: 108px;
+    background: #C3F1FF;
+    border-bottom: 2px solid #77DFFF;
+    padding-top: 27px;
+    box-sizing: border-box;
+}
+
+.texto {
+    margin-left: 41px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.tit:hover {
+    background: #77DFFF;
+}
+
+i {
+    margin-right: 45px;
+}
