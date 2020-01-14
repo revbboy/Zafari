@@ -1,26 +1,29 @@
+const inpUsername = document.querySelector('#inp-username');
+const msgError = document.querySelector('.msg-error');
+const btnLogin = document.querySelector('#btn-login');
+const inpPass = document.querySelector('#inp-password');
+const msgError2 = document.querySelector('.msg-error2');
 
-const botonIng = window.document.querySelector('#Boton');
-console.log(botonIng);
+btnLogin.addEventListener('click', login);
+inpUsername.addEventListener('focus', focusInput);
+inpPass.addEventListener('focus', focusInput);
 
-function ingresar(){
-    const input1 = window.document.querySelector('#Usuario');
-    const input2 = window.document.querySelector('#Pass');
-
-    const usuario   = input1.value;
-    const pass      = input2.value;
-
-    console.log('Usuario: ' + usuario + ', Contraseña: '+ pass);
-    if (usuario === 'ejemplo@gmail.com' && pass === '123456') {
-        console.log('Iniciando Sesión...')
+function login() {
+    if (inpUsername.value === '' || inpPass.value === '') {
+        msgError2.classList.remove(['hide']);
+        msgError2.classList.add(['visible']);
+    } else
+    if (inpUsername.value !== 'ejemplo@gmail.com' || inpPass.value !== '123456') {
+        msgError.classList.remove(['hide']);
+        msgError.classList.add(['visible']);
+    } else {
+        document.location.assign('../Layout/index.html');
     }
-    else{
-        console.log('Email y/o contraseña incorrectos')
-    }
-    input1.value = '';
-    input1.focus();
-    input2.value = '';
-    input2.focus();
-
 }
-botonIng.addEventListener('click',ingresar);
 
+function focusInput() {
+    msgError.classList.remove(['visible']);
+    msgError.classList.add(['hide']);
+    msgError2.classList.remove(['visible']);
+    msgError2.classList.add(['hide']);
+}
