@@ -12,6 +12,7 @@ function login() {
     if (inpUsername.value === '' || inpPass.value === '') {
         msgError2.classList.remove(['hide']);
         msgError2.classList.add(['visible']);
+        return;
     } else
     if (inpUsername.value !== 'ejemplo@gmail.com' || inpPass.value !== '123456') {
         msgError.classList.remove(['hide']);
